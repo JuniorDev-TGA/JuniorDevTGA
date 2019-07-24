@@ -1,0 +1,41 @@
+body {
+	margin: 0px;
+	background-color: #313440;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	height: 100%;
+}
+
+.root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header"
+        "hero"
+        "hosts"
+        "slack"
+        "newsletter"
+        "footer";
+}
+
+.text-red {
+    color: #EF266F;
+}
+
+#header-logo {
+    float: left;
+    width: 4em;
+    height: 4em;
+}
+
+#header {
+    grid-area: "header";
+    font-weight: bold;
+}
+
+#hero { grid-area: "hero" }
+#hosts { grid-area: "hosts" }
+#slack { grid-area: "slack" }
+#newsletter { grid-area: "newsletter" }
+#footer { grid-area: "footer" }
