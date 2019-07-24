@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap');
 
 // 1. SETTINGS
+@import "setting.spacing.scss";
+@import "setting.breakpoint.scss";
 
 // 2. TOOLS
 
@@ -11,6 +13,8 @@
 
 // 4. ELEMENTS
 @import "element.body.scss";
+@import "element.heading.scss";
+@import "element.button.scss";
 
 // 5. OBJECTS
 

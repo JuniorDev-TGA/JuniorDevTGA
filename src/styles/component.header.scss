@@ -5,14 +5,20 @@
   z-index: 10;
   width: 100%;
 
-  padding: 30px 30px;
+  padding: 15px 15px;
   
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-      "logo navigation"
+      "logo navigation";
+
+      
+
+  @include media-query('large') {
+    padding: 30px 30px;
+  }
 }
 
   .c-header__logo {
@@ -32,10 +38,15 @@
     }
 
 .c-header__navigation {
+  display: none;
   grid-area: navigation;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   margin-right: 1.5em;
+
+  @include media-query('large') {
+    display: block;
+  }
 }
   .c-header__navigation a {
     color: #FFF;
