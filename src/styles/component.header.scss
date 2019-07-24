@@ -9,7 +9,7 @@
   
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   grid-template-areas:
       "logo navigation";
@@ -44,7 +44,7 @@
   margin-bottom: 1.5em;
   margin-right: 1.5em;
 
-  @include media-query('large') {
+  @include media-query('medium') {
     display: block;
   }
 }
