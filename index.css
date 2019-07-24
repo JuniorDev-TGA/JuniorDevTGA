@@ -23,19 +23,19 @@ body {
     color: #EF266F;
 }
 
-#header-logo {
+.header-logo {
     float: left;
     width: 4em;
     height: 4em;
 }
 
-#header {
+.header {
     grid-area: "header";
     font-weight: bold;
 }
 
-#hero { grid-area: "hero" }
-#hosts { grid-area: "hosts" }
-#slack { grid-area: "slack" }
-#newsletter { grid-area: "newsletter" }
-#footer { grid-area: "footer" }
+.hero { grid-area: "hero" }
+.hosts { grid-area: "hosts" }
+.slack { grid-area: "slack" }
+.newsletter { grid-area: "newsletter" }
+.footer { grid-area: "footer" }
