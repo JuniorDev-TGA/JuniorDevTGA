@@ -1,7 +1,23 @@
-html {
-  background: #313440;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-@import "reset.scss";
+// 1. SETTINGS
 
-@import "component-header.scss";
+// 2. TOOLS
+
+// 3. GENERIC
+@import "generic.reset.scss";
+@import "generic.normalize.scss";
+@import "generic.box-sizing.scss";
+
+// 4. ELEMENTS
+@import "element.body.scss";
+
+// 5. OBJECTS
+
+// 6. COMPONENTS
+@import "component.header.scss";
+@import "component.hero.scss";
+
+// 7. UTILITIES
+@import "utility.colour.scss";
+@import "utility.text-alignment.scss";
