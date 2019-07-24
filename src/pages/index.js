@@ -3,11 +3,14 @@ import React from "react"
 // COMPONENTS
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Footer from "../components/footer"
+import Logo from "../components/logo";
 
-// IMAGES
-import Image_JuniorDevLogo from "../images/juniordev_logo.png"
+import Hero from "../components/hero"
+import HeroTagLine from "../components/hero-tagline"
+import HeroNextEvent from "../components/hero-next-event"
+import HeroNextEventDetail from "../components/hero-next-event-detail"
+
+import Footer from "../components/footer"
 
 const IndexPage = () => (
   <Layout>
@@ -15,13 +18,23 @@ const IndexPage = () => (
     <Hero>
       <div className="c-hero__container u-text-center">
         <h1>Junior Dev <span className="u-text-red">Tauranga</span></h1>
-        <div className="c-hero__tagline">We are a community for juniors, students, people still learning and those already working, for self-learners, bootcampers, or grads and students in formal education.</div>
-        <div className="c-hero__event">
-          <div className="c-hero__event-detail"><span className="u-text-red">Next Event: </span>Developer Gym Session</div>
-          <div className="c-hero__event-detail"><span className="u-text-red">Where: </span>Cucumber HQ (78 Wharf Street)</div>
-          <div className="c-hero__event-detail"><span className="u-text-red">When: </span>7th August, 6pm - 8pm</div>
-          <div className="c-hero__cta"><a className="c-button" href="https://www.meetup.com/JuniorDev-Tauranga/" target="_blank" rel="noopener noreferrer">Reserve your seat</a></div>
-        </div>
+        <HeroTagLine content="We are a community for everyone. Attend our frequent meetups to be introduced to the industry, expand your knowledge and connect with others." />
+        <HeroNextEvent>
+          <HeroNextEventDetail title="Next Event" description="Developer Gym Session" />
+          <HeroNextEventDetail title="Where" description="Cucumber (78 Wharf Street)" />
+          <HeroNextEventDetail title="When" description="7th August, 6pm - 8pm" />
+
+          <div className="c-hero__cta">
+            <a
+              className="c-button"
+              href="https://www.meetup.com/JuniorDev-Tauranga/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              Join Us
+            </a>
+          </div>
+        </HeroNextEvent>
       </div>
     </Hero>
 
@@ -29,7 +42,7 @@ const IndexPage = () => (
 
     <Footer>
       <div className="c-footer__logo">
-        <img src={Image_JuniorDevLogo} alt="Junior Dev Tauranga Logo" />
+        <Logo />
       </div>
       <div className="c-footer__navigation">
         <a href="#changeme">Next event</a>

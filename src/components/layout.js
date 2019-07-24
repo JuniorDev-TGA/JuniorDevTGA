@@ -4,9 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 // COMPONENTS
 import Header from "./header"
-
-// IMAGES
-import Image_JuniorDevLogo from "../images/juniordev_logo.png"
+import Logo from "../components/logo";
 
 // STYLESHEETS
 import "../styles/main.scss"
@@ -26,7 +24,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title}>
         <div className="c-header__logo">
-          <img src={Image_JuniorDevLogo} alt="Junior Dev Tauranga Logo" />
+          <Logo />
         </div>
         <div className="c-header__navigation u-text-right">
           <a href="#changeme">Next event</a>
