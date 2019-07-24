@@ -1,0 +1,61 @@
+.c-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+
+  padding: 30px 30px;
+  
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+      "logo navigation"
+}
+
+  .c-header__logo {
+    grid-area: logo;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "logo text-top"
+        "logo text-bottom";
+  }
+
+    .c-header__logo img {
+      grid-area: logo;
+    }
+
+.c-header__navigation {
+  grid-area: navigation;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-right: 1.5em;
+}
+  .c-header__navigation a {
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+      font-size: 16px;
+    }
+  }
+  .c-header__navigation span {
+    color: #FFF;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+//.hero { grid-area: "hero" }
+//.hosts { grid-area: "hosts" }
+//.slack { grid-area: "slack" }
+//.newsletter { grid-area: "newsletter" }
+//.footer { grid-area: "footer" }
