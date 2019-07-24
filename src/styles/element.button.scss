@@ -1,0 +1,16 @@
+.c-button {
+  color: #FFF;
+  padding: $spacing-unit $spacing-unit-large;
+  border-radius: 10px;
+  background: #EF266F;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #69f0ae;
+  }
+}

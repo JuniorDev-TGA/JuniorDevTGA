@@ -1,20 +1,94 @@
 .c-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: relative;
   background: #313440;
   height: 100vh;
+  overflow: hidden;
 }
-  .c-hero__circles--left {
-    position: absolute;
-    left: 0;
-    bottom: 150px;
+  .c-hero__container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include media-query('medium') {
+      width: 700px;
+    }
+
+    @include media-query('large') {
+      width: 800px;
+    }
   }
-  .c-hero__circles--bottom {
-    position: absolute;
+
+    .c-hero__container h1 {
+      font-size: 42px;
+      color: #FFF;
+      margin-bottom: $spacing-unit-large;
+
+      @include media-query('large') {
+        font-size: 64px;
+      }
+    }
+
+    .c-hero__tagline {
+      color: #FFF;
+      font-size: 16px;
+      line-height: 1.33;
+      margin-bottom: $spacing-unit-large;
+
+      @include media-query('large') {
+        font-size: 18px;
+      }
+    }
+
+      .c-hero__event-detail {
+        font-size: 14px;
+        color: #FFF;
+        margin-bottom: $spacing-unit-small;
+        font-weight: 600;
+
+        @include media-query('large') {
+          font-size: 16px;
+        }
+      }
+
+      .c-hero__cta {
+        margin-top: $spacing-unit-large;
+      }
+
+// Floating images (left, bottom, top).
+.c-hero__circles--left {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+
+  @include media-query('large') {
+    display: block;
+  }
+}
+.c-hero__circles--bottom {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  transform: translateX(50%);
+
+  @include media-query('large') {
     right: 150px;
-    bottom: 0;
+    transform: none;
   }
-  .c-hero__circles--top {
-    position: absolute;
+}
+.c-hero__circles--top {
+  position: absolute;
+  right: -100px;
+  top: -2px;
+  
+  @include media-query('large') {
     right: 0;
-    top: 0;
   }
+}
