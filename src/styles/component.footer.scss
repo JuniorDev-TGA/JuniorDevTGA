@@ -16,7 +16,6 @@
   margin-bottom: $spacing-unit;
 
   @include media-query('medium') {
-    flex: 1 1 150px;
     text-align: left;
     margin-bottom: 0;
   }
@@ -27,7 +26,6 @@
   text-align: center;
 
   @include media-query('medium') {
-    flex-grow: 1;
     text-align: right;
   }
 }
