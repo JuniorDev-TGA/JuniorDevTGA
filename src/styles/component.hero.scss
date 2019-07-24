@@ -1,0 +1,20 @@
+.c-hero {
+  position: relative;
+  background: #313440;
+  height: 100vh;
+}
+  .c-hero__circles--left {
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+  }
+  .c-hero__circles--bottom {
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+  }
+  .c-hero__circles--top {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }

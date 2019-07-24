@@ -3,14 +3,18 @@ import React from "react"
 import Image_JuniorDevLogo from "../images/juniordev_logo.png"
 
 const Header = () => (
-  <div class="header">
-    <div class="header-logo">
-      <img class="header-logo-image" src={Image_JuniorDevLogo} alt="logo"/>
-      <span class="header-logo-top">JuniorDev</span>
-      <span class="header-logo-bottom text-red">Tauranga</span>
+  <div className="c-header">
+    <div className="c-header__logo">
+      <img src={Image_JuniorDevLogo} alt="Junior Dev Tauranga Logo"/>
     </div>
-    <div class="header-navigation">
-      <a href="#changeme">Next event</a> / <a href="#changeme">Meet the hosts</a> / <a href="#changeme">Slack channel</a> / <a href="#changeme">Newsletter</a>
+    <div className="c-header__navigation u-text-right">
+      <a href="#changeme">Next event</a>
+      <span>/</span>
+      <a href="#changeme">Meet the hosts</a>
+      <span>/</span>
+      <a href="#changeme">Slack channel</a>
+      <span>/</span>
+      <a href="#changeme">Newsletter</a>
     </div>
   </div>
 )
