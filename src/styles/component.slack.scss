@@ -18,6 +18,11 @@
     width: 100%;
     max-width: 430px;
     margin: 0 auto;
+
+    @include media-query('large') {
+      max-width: 500px;
+      padding: 0 $spacing-unit-large;
+    }
   }
 
     .c-slack__title {
@@ -47,5 +52,13 @@
     
     @include media-query('large') {
       display: block;
+      justify-self: flex-end;
+    }
+  }
+
+  .c-slack__column-image img {
+    @include media-query('large') {
+      max-width: 100%;
+      max-height: 400px;
     }
   }
