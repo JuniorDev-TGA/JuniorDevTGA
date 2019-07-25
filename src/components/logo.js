@@ -1,7 +1,7 @@
 import React from "react"
-import Image_JuniorDevLogo from "../images/juniordev_logo.png"
+import JuniorDevLogo from "../images/juniordev-logo.png"
 
 const Logo = () => (
-  <img src={Image_JuniorDevLogo} alt="Junior Dev Tauranga Logo" />
+  <img src={JuniorDevLogo} alt="Junior Dev Tauranga Logo" />
 )
 export default Logo
