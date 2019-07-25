@@ -10,6 +10,9 @@ import HeroTagLine from "../components/hero-tagline"
 import HeroNextEvent from "../components/hero-next-event"
 import HeroNextEventDetail from "../components/hero-next-event-detail"
 
+import SlackChannel from "../components/slack-channel"
+import Image_Slack from "../images/slack.jpg"
+
 import Footer from "../components/footer"
 
 const IndexPage = () => (
@@ -39,6 +42,29 @@ const IndexPage = () => (
     </Hero>
 
     <h1>Junior Dev Tauranga</h1>
+
+    <SlackChannel>
+      <div className="c-slack__column-text">
+        <div className="c-slack__title">We have a slack channel!</div>
+        <div className="c-slack__description">
+          <p>We have an awesome community of over 50 developers in Tauranga. Come and join our group and be apart of the fun.</p>
+          <p>We can help with your job search or help with career advice, just ask a question and somebody from the community will help you out.</p>
+        </div>
+        <div className="c-slack__cta">
+          <a
+            className="c-button"
+            href="https://www.meetup.com/JuniorDev-Tauranga/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Join the channel
+          </a>
+        </div>
+      </div>
+      <div className="c-slack__column-image">
+        <img src={Image_Slack} alt="Junior Dev Tauranga Slack Community" />
+      </div>
+    </SlackChannel>
 
     <Footer>
       <div className="c-footer__logo">
