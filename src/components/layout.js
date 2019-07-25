@@ -6,6 +6,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Logo from "../components/logo";
 
+// FUNCTIONS
+import PageScroll from './functions'
+
 // STYLESHEETS
 import "../styles/main.scss"
 
@@ -27,13 +30,9 @@ const Layout = ({ children }) => {
           <Logo />
         </div>
         <div className="c-header__navigation u-text-right">
-          <a href="#changeme">Next event</a>
+          <div className="c-header__page" onClick={() => PageScroll('.c-hosts')}>Meet the hosts</div>
           <span>/</span>
-          <a href="#changeme">Meet the hosts</a>
-          <span>/</span>
-          <a href="#changeme">Slack channel</a>
-          <span>/</span>
-          <a href="#changeme">Newsletter</a>
+          <div className="c-header__page" onClick={() => PageScroll('.c-slack')}>Slack channel</div>
         </div>
       </Header>
 
