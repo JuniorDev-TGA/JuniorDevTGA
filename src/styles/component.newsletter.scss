@@ -1,0 +1,88 @@
+.c-newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10vh;
+
+  position: relative;
+  background: #FFFFFF;
+  height: 80vh;
+  overflow: hidden;
+}
+  .c-newsletter__container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include media-query('medium') {
+      width: 700px;
+    }
+
+    @include media-query('large') {
+      width: 800px;
+    }
+  }
+
+    .c-newsletter__container h1 {
+      font-size: 32px;
+      color: #313440;
+      margin-bottom: $spacing-unit-large;
+
+      @include media-query('large') {
+        font-size: 48px;
+      }
+    }
+
+    .c-newsletter__tagline {
+      color: #313440;
+      font-size: 16px;
+      line-height: 1.33;
+      margin-bottom: $spacing-unit-large;
+
+      @include media-query('large') {
+        font-size: 18px;
+      }
+    }
+
+    .c-newsletter__form {
+      margin-top: $spacing-unit-large;
+
+      .c-newsletter__form-submit {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+
+      .c-newsletter__form-email {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+
+      .c-newsletter__event-detail {
+        font-size: 14px;
+        color: #FFF;
+        margin-bottom: $spacing-unit-small;
+        font-weight: 600;
+
+        @include media-query('large') {
+          font-size: 16px;
+        }
+      }
+
+// Floating image (bottom).
+.c-newsletter-social {
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  transform: translateX(50%);
+  display: none;
+
+  @include media-query('large') {
+    display: block;
+    right: 0%;
+    transform: none;
+  }
+}
