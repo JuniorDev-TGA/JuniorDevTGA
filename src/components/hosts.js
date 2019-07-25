@@ -16,28 +16,28 @@ const Hosts = () => (
       <h1>Meet the hosts</h1>
       <div className="c-hosts__people">
         <div className="c-hosts__person">
-          <img className="c-hosts__person-image" src={Josh} alt=""></img>
           <span className="c-hosts__person-name">Josh Biddick</span>
+          <img className="c-hosts__person-image" src={Josh} alt=""></img>
           <img className="c-hosts__person-company" src={CucumberLogo} alt="Cucumber"></img>
         </div>
         <div className="c-hosts__person">
-          <img className="c-hosts__person-image" src={Kelly} alt=""></img>
           <span className="c-hosts__person-name">Kelly Williams</span>
+          <img className="c-hosts__person-image" src={Kelly} alt=""></img>
           <img className="c-hosts__person-company" src={CucumberLogo} alt="Cucumber"></img>
         </div>
         <div className="c-hosts__person">
-          <img className="c-hosts__person-image" src={Michael} alt=""></img>
           <span className="c-hosts__person-name">Michael Forde</span>
+          <img className="c-hosts__person-image" src={Michael} alt=""></img>
           <img className="c-hosts__person-company" src={DatacomLogo} alt="Datacom"></img>
         </div>
         <div className="c-hosts__person">
-          <img className="c-hosts__person-image" src={Matias} alt=""></img>
           <span className="c-hosts__person-name">Matias Iacono</span>
+          <img className="c-hosts__person-image" src={Matias} alt=""></img>
           <img className="c-hosts__person-company" src={CucumberLogo} alt="Cucumber"></img>
         </div>
         <div className="c-hosts__person">
-          <img className="c-hosts__person-image" src={Hayden} alt=""></img>
           <span className="c-hosts__person-name">Hayden Bruin</span>
+          <img className="c-hosts__person-image" src={Hayden} alt=""></img>
           <img className="c-hosts__person-company" src={CucumberLogo} alt="Cucumber"></img>
         </div>
       </div>
