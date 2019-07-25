@@ -27,7 +27,7 @@ const Hosts = () => (
         </div>
         <div className="c-hosts__person">
           <img className="c-hosts__person-image" src={Michael} alt=""></img>
-          <span className="c-hosts__person-name">Michael Ford</span>
+          <span className="c-hosts__person-name">Michael Forde</span>
           <img className="c-hosts__person-company" src={DatacomLogo} alt="Datacom"></img>
         </div>
         <div className="c-hosts__person">
