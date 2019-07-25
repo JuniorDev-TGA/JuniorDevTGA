@@ -1,0 +1,75 @@
+.c-hosts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background: #D73B5A;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url("../images/hosts-pattern.png");
+  background-repeat: repeat;
+}
+  .c-hosts__container {
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 0;
+    padding: 0 15px;
+
+    @include media-query('medium') {
+      width: 800px;
+    }
+
+    @include media-query('large') {
+      width: 1000px;
+    }
+  }
+
+    .c-hosts__container h1 {
+      font-size: 32px;
+      color: #FFF;
+      margin-bottom: $spacing-unit-large * 2;
+
+      @include media-query('large') {
+        font-size: 42px;
+      }
+    }
+
+    .c-hosts__people {
+      margin-bottom: $spacing-unit-large;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 7.5%;
+
+      width: 100%;
+
+      @include media-query('large') {
+        font-size: 18px;
+      }
+
+      .c-hosts__person-name {
+        font-size: 24px;
+        color: #FFF;
+        font-weight: 600;
+        width: 100%;
+
+        @include media-query('large') {
+          font-size: 24px;
+        }
+      }
+
+      .c-hosts__person-image {
+        clip-path: circle(50% at center);
+        width: 100%;
+        margin-bottom: $spacing-unit;
+      }
+
+      .c-hosts__person-company {
+        margin-top: $spacing-unit;
+        width: 100%;
+      }
+    }

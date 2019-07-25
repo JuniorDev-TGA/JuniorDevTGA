@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Logo from "../components/logo";
 
 import Hero from "../components/hero"
+import Hosts from "../components/hosts"
 import HeroTagLine from "../components/hero-tagline"
 import HeroNextEvent from "../components/hero-next-event"
 import HeroNextEventDetail from "../components/hero-next-event-detail"
@@ -41,7 +42,7 @@ const IndexPage = () => (
       </div>
     </Hero>
 
-    <h1>Junior Dev Tauranga</h1>
+    <Hosts />
 
     <SlackChannel>
       <div className="c-slack__column-text">
