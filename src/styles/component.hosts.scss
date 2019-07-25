@@ -1,0 +1,59 @@
+.c-hosts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background: #313440;
+  height: 100vh;
+  overflow: hidden;
+}
+  .c-hosts__container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include media-query('medium') {
+      width: 700px;
+    }
+
+    @include media-query('large') {
+      width: 800px;
+    }
+  }
+
+    .c-hosts__container h1 {
+      font-size: 42px;
+      color: #FFF;
+      margin-bottom: $spacing-unit-large;
+
+      @include media-query('large') {
+        font-size: 64px;
+      }
+    }
+
+    .c-hosts__people {
+      margin-bottom: $spacing-unit-large;
+
+      @include media-query('large') {
+        font-size: 18px;
+      }
+
+      .c-hosts__person-name {
+        font-size: 16px;
+        color: #FFF;
+        margin-bottom: $spacing-unit-small;
+        font-weight: 600;
+
+        @include media-query('large') {
+          font-size: 16px;
+        }
+      }
+    }
+
+.c-hosts__pattern {
+  // pattern
+}
