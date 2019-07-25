@@ -16,6 +16,9 @@ import Image_Slack from "../images/slack.jpg"
 
 import Footer from "../components/footer"
 
+// FUNCTIONS
+import PageScroll from '../components/functions'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="JuniorDev Tauranga" />
@@ -54,7 +57,7 @@ const IndexPage = () => (
         <div className="c-slack__cta">
           <a
             className="c-button"
-            href="https://www.meetup.com/JuniorDev-Tauranga/"
+            href="https://join.slack.com/t/juniordevtga/shared_invite/enQtNDc3NjExOTk0NzA4LWM2NDM0N2EwNTIxZTNkNjM5ZGQ0NzM5ZmJhMGRhZGYwYjVhOWM4Y2Y1MWNjOTNmYjA2MTVjNjIyNDBhNDc2ZjY"
             target="_blank"
             rel="noopener noreferrer"
             >
@@ -72,13 +75,9 @@ const IndexPage = () => (
         <Logo />
       </div>
       <div className="c-footer__navigation">
-        <a href="#changeme">Next event</a>
+        <div className="c-header__page" onClick={() => PageScroll('.c-hosts')}>Meet the hosts</div>
         <span>/</span>
-        <a href="#changeme">Meet the hosts</a>
-        <span>/</span>
-        <a href="#changeme">Slack channel</a>
-        <span>/</span>
-        <a href="#changeme">Newsletter</a>
+        <div className="c-header__page" onClick={() => PageScroll('.c-slack')}>Slack channel</div>
       </div>
     </Footer>
   </Layout>

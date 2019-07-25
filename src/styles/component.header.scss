@@ -48,11 +48,13 @@
     display: block;
   }
 }
-  .c-header__navigation a {
+  .c-header__page {
+    display: inline-block;
     color: #FFF;
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 14px;
+    cursor: pointer;
 
     &:hover {
       text-decoration: underline;
