@@ -8,7 +8,7 @@
   padding: $spacing-unit-huge 0;
   overflow: hidden;
 
-  background-image: url("../images/hosts-pattern.png");
+  background-image: url("../images/hosts-bg.png");
   background-repeat: repeat;
 }
   .c-hosts__container {
@@ -24,7 +24,7 @@
     }
 
     @include media-query('large') {
-      width: 1000px;
+      width: 1170px;
     }
   }
 
@@ -39,19 +39,31 @@
     }
 
     .c-hosts__people {
-      margin-bottom: $spacing-unit-large;
-
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-column-gap: 7.5%;
-
+      display: flex;
+      flex-flow: wrap;
       width: 100%;
+      margin-bottom: $spacing-unit-large;
 
       @include media-query('large') {
         font-size: 18px;
       }
+    }
+
+      .c-hosts__person {
+        flex: 1 1 50%;
+        padding: 0 $spacing-unit;
+        margin-bottom: $spacing-unit-large;
+
+        @include media-query('medium') {
+          flex: 1 1 33.33%;
+        }
+        @include media-query('large') {
+          flex: 1 1 20%;
+        }
+      }
 
       .c-hosts__person-name {
+        display: block;
         font-size: 24px;
         color: #FFF;
         font-weight: 600;
@@ -63,13 +75,17 @@
       }
 
       .c-hosts__person-image {
-        clip-path: circle(50% at center);
+        display: block;
+        border-radius: 100%;
         width: 100%;
-        margin-bottom: $spacing-unit;
+        margin: 0 auto $spacing-unit auto;
+        max-width: 150px;
       }
 
       .c-hosts__person-company {
-        margin-top: $spacing-unit;
+        display: block;
+        margin: $spacing-unit auto 0 auto;
         width: 100%;
+        max-width: 150px;
       }
-    }
+    
