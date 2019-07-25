@@ -1,0 +1,64 @@
+.c-slack {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  background: #4A154B;
+  padding: $spacing-unit-huge $spacing-unit;
+  text-align: center;
+
+  @include media-query('large') {
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: $spacing-unit-huge 0;
+  }
+}
+  .c-slack__column-text {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+
+    @include media-query('large') {
+      max-width: 500px;
+      padding: 0 $spacing-unit-large;
+    }
+  }
+
+    .c-slack__title {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: $spacing-unit-large;
+    }
+
+    .c-slack__description {
+      margin-bottom: $spacing-unit-large;
+    }
+
+    .c-slack__description p {
+      color: #FFF;
+      font-size: 14px;
+      line-height: 1.33;
+      margin-bottom: $spacing-unit-small;
+    }
+    
+    .c-slack__cta {
+
+    }
+
+  .c-slack__column-image {
+    display: none;
+    
+    @include media-query('large') {
+      display: block;
+      justify-self: flex-end;
+    }
+  }
+
+  .c-slack__column-image img {
+    @include media-query('large') {
+      max-width: 100%;
+      max-height: 400px;
+    }
+  }
