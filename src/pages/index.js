@@ -4,21 +4,22 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
+import Hosts from "../components/hosts"
 import Footer from "../components/footer"
 
 // IMAGES
-import Image_JuniorDevLogo from "../images/juniordev_logo.png"
+import JuniorDevLogo from "../images/juniordev-logo.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="JuniorDev Tauranga" />
     <Hero></Hero>
 
-    <h1>Junior Dev Tauranga</h1>
+    <Hosts></Hosts>
 
     <Footer>
       <div className="c-footer__logo">
-        <img src={Image_JuniorDevLogo} alt="Junior Dev Tauranga Logo"/>
+        <img src={JuniorDevLogo} alt="Junior Dev Tauranga Logo"/>
       </div>
       <div className="c-footer__navigation">
         <a href="#changeme">Next event</a>

@@ -1,11 +1,11 @@
 //import { Link } from "gatsby"
 import React from "react"
-import Image_JuniorDevLogo from "../images/juniordev_logo.png"
+import JuniorDevLogo from "../images/juniordev-logo.png"
 
 const Header = () => (
   <div className="c-header">
     <div className="c-header__logo">
-      <img src={Image_JuniorDevLogo} alt="Junior Dev Tauranga Logo"/>
+      <img src={JuniorDevLogo} alt="Junior Dev Tauranga Logo"/>
     </div>
     <div className="c-header__navigation u-text-right">
       <a href="#changeme">Next event</a>
