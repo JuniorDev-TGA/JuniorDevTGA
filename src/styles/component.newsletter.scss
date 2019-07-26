@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20vh;
-  padding-top: 20vh;
+  padding-bottom: $spacing-unit-huge * 2;
+  padding-top: $spacing-unit-huge;
 
   position: relative;
   background: #FFFFFF;
