@@ -14,6 +14,10 @@ import HeroNextEventDetail from "../components/hero-next-event-detail"
 import SlackChannel from "../components/slack-channel"
 import Image_Slack from "../images/slack.jpg"
 
+import Newsletter from "../components/newsletter"
+import NewsletterTagLine from "../components/newsletter-tagline.js"
+import NewsletterForm from "../components/newsletter-form"
+
 import Footer from "../components/footer"
 
 // FUNCTIONS
@@ -23,26 +27,24 @@ const IndexPage = () => (
   <Layout>
     <SEO title="JuniorDev Tauranga" />
     <Hero>
-      <div className="c-hero__container u-text-center">
-        <h1>Junior Dev <span className="u-text-red">Tauranga</span></h1>
-        <HeroTagLine content="We are a community for everyone. Attend our frequent meetups to be introduced to the industry, expand your knowledge and connect with others." />
-        <HeroNextEvent>
-          <HeroNextEventDetail title="Next Event" description="Developer Gym Session" />
-          <HeroNextEventDetail title="Where" description="Cucumber (78 Wharf Street)" />
-          <HeroNextEventDetail title="When" description="7th August, 6pm - 8pm" />
+      <h1>Junior Dev <span className="u-text-red">Tauranga</span></h1>
+      <HeroTagLine content="We are a community for everyone. Attend our frequent meetups to be introduced to the industry, expand your knowledge and connect with others." />
+      <HeroNextEvent>
+        <HeroNextEventDetail title="Next Event" description="Developer Gym Session" />
+        <HeroNextEventDetail title="Where" description="Cucumber (78 Wharf Street)" />
+        <HeroNextEventDetail title="When" description="7th August, 6pm - 8pm" />
 
-          <div className="c-hero__cta">
-            <a
-              className="c-button"
-              href="https://www.meetup.com/JuniorDev-Tauranga/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              Join Us
-            </a>
-          </div>
-        </HeroNextEvent>
-      </div>
+        <div className="c-hero__cta">
+          <a
+            className="c-button"
+            href="https://www.meetup.com/JuniorDev-Tauranga/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Join Us
+          </a>
+        </div>
+      </HeroNextEvent>
     </Hero>
 
     <Hosts />
@@ -69,6 +71,12 @@ const IndexPage = () => (
         <img src={Image_Slack} alt="Junior Dev Tauranga Slack Community" />
       </div>
     </SlackChannel>
+
+    <Newsletter>
+      <h1>Subscribe to our newsletter</h1>
+      <NewsletterTagLine content="We'll send you notifications for when our next events are and what you need to bring to get the most out of them. We'll also let you know about cool tech-related things happening around Tauranga." />
+      <NewsletterForm />
+    </Newsletter>
 
     <Footer>
       <div className="c-footer__logo">
