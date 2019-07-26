@@ -12,11 +12,9 @@
   }
 }
 .c-footer__logo {
-  text-align: center;
   margin-bottom: $spacing-unit;
 
   @include media-query('medium') {
-    text-align: left;
     margin-bottom: 0;
   }
 
@@ -24,9 +22,15 @@
 
 .c-footer__navigation {
   text-align: center;
+  display: none;
 
   @include media-query('medium') {
+    display: block;
     text-align: right;
+  }
+
+  @include media-query('large') {
+    display: block;
   }
 }
 .c-footer__navigation a {
