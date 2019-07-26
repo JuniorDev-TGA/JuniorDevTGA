@@ -15,6 +15,7 @@ import SlackChannel from "../components/slack-channel"
 import Image_Slack from "../images/slack.jpg"
 
 import Newsletter from "../components/newsletter"
+import NewsletterHeading from "../components/newsletter-heading"
 import NewsletterTagLine from "../components/newsletter-tagline.js"
 import NewsletterForm from "../components/newsletter-form"
 
@@ -73,7 +74,7 @@ const IndexPage = () => (
     </SlackChannel>
 
     <Newsletter>
-      <h1>Subscribe to our newsletter</h1>
+      <NewsletterHeading title="Subscribe to our newsletter" />
       <NewsletterTagLine content="We'll send you notifications for when our next events are and what you need to bring to get the most out of them. We'll also let you know about cool tech-related things happening around Tauranga." />
       <NewsletterForm />
     </Newsletter>
