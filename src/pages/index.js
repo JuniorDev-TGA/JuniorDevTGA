@@ -31,9 +31,9 @@ const IndexPage = () => (
       <h1>Junior Dev <span className="u-text-red">Tauranga</span></h1>
       <HeroTagLine content="We are a community for everyone. Attend our frequent meetups to be introduced to the industry, expand your knowledge and connect with others." />
       <HeroNextEvent>
-        <HeroNextEventDetail title="Next Event" description="Developer Gym Session" />
+        <HeroNextEventDetail title="Next Event" description="The Perfect Storm" />
         <HeroNextEventDetail title="Where" description="Cucumber (78 Wharf Street)" />
-        <HeroNextEventDetail title="When" description="7th August, 6pm - 8pm" />
+        <HeroNextEventDetail title="When" description="13th August, 6pm - 8pm" />
 
         <div className="c-hero__cta">
           <a
