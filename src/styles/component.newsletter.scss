@@ -1,5 +1,5 @@
 .c-newsletter {
-  display: none; //flex
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: $spacing-unit-huge 15px;
@@ -37,6 +37,19 @@
       @include media-query('large') {
         font-size: 18px;
       }
+    }
+
+    .c-newsletter__success {
+      border: 1px solid #9dc587;
+      padding: 15px 15px;
+      color: #9dc587;
+      line-height: 1.5;
+    }
+    .c-newsletter__error {
+      border: 1px solid #c72525;
+      padding: 15px 15px;
+      color: #c72525;
+      line-height: 1.5;
     }
 
     .c-newsletter__form {
