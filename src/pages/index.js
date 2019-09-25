@@ -1,4 +1,7 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+
+// 3RD PARTY
+import axios from 'axios'
 
 // COMPONENTS
 import Layout from "../components/layout"
@@ -24,28 +27,44 @@ import Footer from "../components/footer"
 // FUNCTIONS
 import PageScroll from '../components/functions'
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const [nextEvent, setNextEvent] = useState();
+  
+  useEffect(() => {
+    axios.get('https://api.meetup.com/2/events?group_urlname=JuniorDev-Tauranga&sign=true&page=1&access_token=f740288d7d789cea91f6919ab989ddea')
+    .then(response => response)
+    .then(response => {
+      const getNextEvent = response.data && response.data.results[0];
+      if(getNextEvent) {
+        setNextEvent(getNextEvent)
+      }
+    })
+  }, [])
+
+  return (
   <Layout>
     <SEO title="JuniorDev Tauranga" />
     <Hero>
       <h1>Junior Dev <span className="u-text-red">Tauranga</span></h1>
       <HeroTagLine content="We are a community for everyone. Attend our frequent meetups to be introduced to the industry, expand your knowledge and connect with others." />
-      <HeroNextEvent>
-        <HeroNextEventDetail title="Next Event" description="The Perfect Storm" />
-        <HeroNextEventDetail title="Where" description="Cucumber (78 Wharf Street)" />
-        <HeroNextEventDetail title="When" description="13th August, 6pm - 8pm" />
+      {nextEvent && (
+        <HeroNextEvent>
+          <HeroNextEventDetail title="Next Event" description={nextEvent.name} />
+          <HeroNextEventDetail title="Where" description={`${nextEvent.venue.name}, ${nextEvent.venue.address_1}`} />
+          <HeroNextEventDetail title="When" description={`${new Date(nextEvent.time).toLocaleDateString("en-NZ")}, ${new Date(nextEvent.time).toLocaleTimeString("en-NZ")}`} />
 
-        <div className="c-hero__cta">
-          <a
-            className="c-button"
-            href="https://www.meetup.com/JuniorDev-Tauranga/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Join Us
-          </a>
-        </div>
-      </HeroNextEvent>
+          <div className="c-hero__cta">
+            <a
+              className="c-button"
+              href="https://www.meetup.com/JuniorDev-Tauranga/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              Join Us
+            </a>
+          </div>
+        </HeroNextEvent>
+      )}
     </Hero>
 
     <Hosts />
@@ -90,6 +109,7 @@ const IndexPage = () => (
       </div>
     </Footer>
   </Layout>
-)
+  )
+}
 
 export default IndexPage

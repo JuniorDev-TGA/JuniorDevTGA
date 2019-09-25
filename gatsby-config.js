@@ -25,6 +25,15 @@ module.exports = {
         background_color: `#313440`,
         theme_color: `#313440`,
         display: `minimal-ui`,
+        icon: "src/images/favicon.png",
+      },
+    },
+    `gatsby-plugin-mailchimp`,
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://gmail.us3.list-manage.com/subscribe/post?u=67fa8efa895833b5dd1fdd70a&amp;id=f59a6fe6d2",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
