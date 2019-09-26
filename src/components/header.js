@@ -1,7 +1,7 @@
 import React from "react"
 
-const Header = ({children}) => (
-  <div className="c-header">
+const Header = ({ children, isHomepage }) => (
+  <div className={`c-header ${isHomepage ? "is-homepage" : ""}`}>
     {children}
   </div>
 )

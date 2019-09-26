@@ -17,7 +17,11 @@ const Hosts = () => (
       <div className="c-hosts__people">
         <div className="c-hosts__person">
           <span className="c-hosts__person-name">Kelly Williams</span>
-          <img className="c-hosts__person-image" src={Kelly} alt=""></img>
+          <img
+            className="c-hosts__person-image"
+            src={Kelly}
+            alt="Kelly Williams"
+          ></img>
           <img
             className="c-hosts__person-company"
             src={CucumberLogo}
@@ -26,7 +30,11 @@ const Hosts = () => (
         </div>
         <div className="c-hosts__person">
           <span className="c-hosts__person-name">Michael Forde</span>
-          <img className="c-hosts__person-image" src={Michael} alt=""></img>
+          <img
+            className="c-hosts__person-image"
+            src={Michael}
+            alt="Michael Forde"
+          ></img>
           <img
             className="c-hosts__person-company"
             src={DatacomLogo}
@@ -35,7 +43,11 @@ const Hosts = () => (
         </div>
         <div className="c-hosts__person">
           <span className="c-hosts__person-name">Josh Biddick</span>
-          <img className="c-hosts__person-image" src={Josh} alt=""></img>
+          <img
+            className="c-hosts__person-image"
+            src={Josh}
+            alt="Josh Biddick"
+          ></img>
           <img
             className="c-hosts__person-company"
             src="https://ricado.co.nz/images/logos/ricado_logo.svg"
@@ -44,7 +56,11 @@ const Hosts = () => (
         </div>
         <div className="c-hosts__person">
           <span className="c-hosts__person-name">Matias Iacono</span>
-          <img className="c-hosts__person-image" src={Matias} alt=""></img>
+          <img
+            className="c-hosts__person-image"
+            src={Matias}
+            alt="Matias Iacono"
+          ></img>
           <img
             className="c-hosts__person-company"
             src={CucumberLogo}
@@ -53,7 +69,11 @@ const Hosts = () => (
         </div>
         <div className="c-hosts__person">
           <span className="c-hosts__person-name">Hayden Bruin</span>
-          <img className="c-hosts__person-image" src={Hayden} alt=""></img>
+          <img
+            className="c-hosts__person-image"
+            src={Hayden}
+            alt="Hayden Bruin"
+          ></img>
           <img
             className="c-hosts__person-company"
             src={CucumberLogo}

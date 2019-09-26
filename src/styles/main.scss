@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap");
 
 // 1. SETTINGS
 @import "setting.spacing.scss";
@@ -20,6 +20,7 @@
 // 5. OBJECTS
 
 // 6. COMPONENTS
+@import "component.learn.scss";
 @import "component.header.scss";
 @import "component.hero.scss";
 @import "component.hosts.scss";
