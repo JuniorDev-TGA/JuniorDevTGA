@@ -6,7 +6,6 @@ import axios from "axios"
 // COMPONENTS
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Logo from "../components/logo"
 
 import Hero from "../components/hero"
 import Hosts from "../components/hosts"
@@ -21,11 +20,6 @@ import Newsletter from "../components/newsletter"
 import NewsletterHeading from "../components/newsletter-heading"
 import NewsletterTagLine from "../components/newsletter-tagline.js"
 import NewsletterForm from "../components/newsletter-form"
-
-import Footer from "../components/footer"
-
-// FUNCTIONS
-import PageScroll from "../components/functions"
 
 const IndexPage = props => {
   const [nextEvent, setNextEvent] = useState()
@@ -119,27 +113,6 @@ const IndexPage = props => {
         <NewsletterTagLine content="We'll send you notifications for when our next events are and what you need to bring to get the most out of them. We'll also let you know about cool tech-related things happening around Tauranga." />
         <NewsletterForm />
       </Newsletter>
-
-      <Footer>
-        <div className="c-footer__logo">
-          <Logo />
-        </div>
-        <div className="c-footer__navigation">
-          <div
-            className="c-header__page"
-            onClick={() => PageScroll(".c-hosts")}
-          >
-            Meet the hosts
-          </div>
-          <span>/</span>
-          <div
-            className="c-header__page"
-            onClick={() => PageScroll(".c-slack")}
-          >
-            Slack channel
-          </div>
-        </div>
-      </Footer>
     </Layout>
   )
 }
