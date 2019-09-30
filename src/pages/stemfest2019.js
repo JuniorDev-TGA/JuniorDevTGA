@@ -45,7 +45,8 @@ const StemFest = () => {
       <div className="c-learn">
         <h2 className="c-learn__heading">Learn to code with Minecraft</h2>
         <div className="c-learn__description">
-          Use your creativity and problem solving skills to explore and build underwater worlds with code!
+          Use your creativity and problem solving skills to explore and build
+          underwater worlds with code!
         </div>
         <div className="c-learn__tutorials">
           <div className="c-tutorial__list">
@@ -57,16 +58,23 @@ const StemFest = () => {
         </div>
       </div>
 
-      <div className="c-hunt" style={{display: 'none'}}>
+      <div className="c-hunt" style={{ display: "none" }}>
         <div className="c-hunt__container">
           <h2 className="c-hunt__heading">Join the Scavenger Hunt!</h2>
           <div className="c-hunt__description">
-            Work together to find various markers around the stem fest event and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <br /><br />
-            Work together to find various markers around the stem fest event and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Work together to find various markers around the stem fest event and
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br />
+            <br />
+            Work together to find various markers around the stem fest event and
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
           <div className="c-hunt__cta">
-            <a href="#appurltobeconfirmed" class="c-button c-button--large">OPEN APP</a>
+            <a href="https://hunt.jdtga.dev" class="c-button c-button--large">
+              OPEN APP
+            </a>
           </div>
         </div>
       </div>
@@ -75,7 +83,7 @@ const StemFest = () => {
 }
 
 const Tutorial = props => {
-  const { tutorial } = props;
+  const { tutorial } = props
   return (
     <div className="c-tutorial__container">
       <div className="c-tutorial__item">
@@ -83,9 +91,16 @@ const Tutorial = props => {
         <div className="c-tutorial__overlay">
           <div className="c-overlay__container">
             <div className="c-tutorial__title">{tutorial.title}</div>
-            <div className="c-tutorial__description">{tutorial.description}</div>
+            <div className="c-tutorial__description">
+              {tutorial.description}
+            </div>
             <div className="c-tutorial__start">
-              <a href={tutorial.url} target="_blank" className="c-button" rel="noopener noreferrer">
+              <a
+                href={tutorial.url}
+                target="_blank"
+                className="c-button"
+                rel="noopener noreferrer"
+              >
                 Start Game
               </a>
             </div>
