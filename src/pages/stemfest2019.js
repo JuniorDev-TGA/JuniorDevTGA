@@ -58,7 +58,7 @@ const StemFest = () => {
         </div>
       </div>
 
-      <div className="c-hunt" style={{ display: "none" }}>
+      <div className="c-hunt">
         <div className="c-hunt__container">
           <h2 className="c-hunt__heading">Join the Scavenger Hunt!</h2>
           <div className="c-hunt__description">
