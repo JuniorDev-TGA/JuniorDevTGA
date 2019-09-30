@@ -62,14 +62,10 @@ const StemFest = () => {
         <div className="c-hunt__container">
           <h2 className="c-hunt__heading">Join the Scavenger Hunt!</h2>
           <div className="c-hunt__description">
-            Work together to find various markers around the stem fest event and
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <br />
-            <br />
-            Work together to find various markers around the stem fest event and
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Welcome to the STEMFest Scavenging Hunt. There are many hidden
+            treasures ready for you to discover and collect. Search for the
+            different tags, scan it with your phone camera and interact with
+            them!
           </div>
           <div className="c-hunt__cta">
             <a href="https://hunt.jdtga.dev" class="c-button c-button--large">
