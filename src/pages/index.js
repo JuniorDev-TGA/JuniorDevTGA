@@ -93,9 +93,9 @@ const IndexPage = props => {
               ask a question and somebody from the community will help you out.
             </p>
           </div>
-          <div className="c-slack__column-image">
-            <img src={Image_Slack} alt="Junior Dev Tauranga Slack Community" />
-          </div>
+        </div>
+        <div className="c-slack__column-image">
+          <img src={Image_Slack} alt="Junior Dev Tauranga Slack Community" />
         </div>
       </SlackChannel>
 
