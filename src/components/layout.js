@@ -6,6 +6,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import Logo from "../components/logo"
+import HashLink from "react-router-hash-link"
 
 // FUNCTIONS
 import PageScroll from "./functions"
@@ -82,9 +83,9 @@ const HeaderLinks = (props) => {
 
   return (
     <>
-      <Link to="/"><div className="c-header__page">Meet the hosts</div></Link>
+      <HashLink to="/#hosts"><div className="c-header__page">Meet the hosts</div></HashLink>
       <span>/</span>
-      <Link to="/"><div className="c-header__page">Slack channel</div></Link>
+      <HashLink to="/#slack"><div className="c-header__page">Slack channel</div></HashLink>
     </>
   )
 }
