@@ -1,41 +1,30 @@
 .c-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
   width: 100%;
 
   padding: 15px 15px;
-  
+  background: #313440;
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr auto;
   grid-template-rows: 1fr;
-  grid-template-areas:
-      "logo navigation";
+  grid-template-areas: "logo navigation stemfest";
 
-      
+  @include media-query("large") {
+    padding: 15px 30px;
+  }
 
-  @include media-query('large') {
-    padding: 30px 30px;
+  &.is-homepage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: transparent;
   }
 }
 
-  .c-header__logo {
-    grid-area: logo;
-    font-weight: bold;
-
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "logo text-top"
-        "logo text-bottom";
-  }
-
-    .c-header__logo img {
-      grid-area: logo;
-    }
+.c-header__logo {
+  grid-area: logo;
+}
 
 .c-header__navigation {
   display: none;
@@ -44,28 +33,35 @@
   margin-bottom: 1.5em;
   margin-right: 1.5em;
 
-  @include media-query('medium') {
+  @include media-query("medium") {
     display: block;
   }
 }
-  .c-header__page {
-    display: inline-block;
-    color: #FFF;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 14px;
-    cursor: pointer;
 
-    &:hover {
-      text-decoration: underline;
-      font-size: 16px;
-    }
+.c-header__stemfest {
+  grid-area: stemfest;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-header__page {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    font-size: 16px;
   }
-  .c-header__navigation span {
-    color: #FFF;
-    display: inline-block;
-    margin: 0 10px;
-  }
+}
+.c-header__navigation span {
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+}
 
 //.hero { grid-area: "hero" }
 //.hosts { grid-area: "hosts" }

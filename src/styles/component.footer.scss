@@ -3,11 +3,6 @@
   padding: $spacing-unit $spacing-unit;
   
   @include media-query('medium') {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    
     padding: $spacing-unit $spacing-unit-large;
   }
 }
