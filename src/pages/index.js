@@ -46,6 +46,7 @@ const IndexPage = props => {
           Junior Dev <span className="u-text-red">Tauranga</span>
         </h1>
         <HeroTagLine content="We are a community for everyone. Attend our frequent meetups to be introduced to the industry, expand your knowledge and connect with others." />
+
         {nextEvent && (
           <HeroNextEvent>
             <HeroNextEventDetail
@@ -84,7 +85,7 @@ const IndexPage = props => {
           <div className="c-slack__title">We have a slack channel!</div>
           <div className="c-slack__description">
             <p>
-              We have an awesome community of over 50 developers in Tauranga.
+              We have an awesome community of over 120+ developers in Tauranga.
               Come and join our group and be apart of the fun.
             </p>
             <p>
@@ -92,31 +93,9 @@ const IndexPage = props => {
               ask a question and somebody from the community will help you out.
             </p>
           </div>
-          <div className="c-slack__cta">
-            <a
-              className="c-button"
-              href="https://join.slack.com/t/juniordevtga/shared_invite/enQtNDc3NjExOTk0NzA4LWM2NDM0N2EwNTIxZTNkNjM5ZGQ0NzM5ZmJhMGRhZGYwYjVhOWM4Y2Y1MWNjOTNmYjA2MTVjNjIyNDBhNDc2ZjY"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Join the channel
-            </a>
+          <div className="c-slack__column-image">
+            <img src={Image_Slack} alt="Junior Dev Tauranga Slack Community" />
           </div>
-        </HeroNextEvent>
-      )}
-    </Hero>
-
-    <Hosts />
-
-    <SlackChannel>
-      <div className="c-slack__column-text">
-        <div className="c-slack__title">We have a slack channel!</div>
-        <div className="c-slack__description">
-          <p>We have an awesome community of over 120+ developers in Tauranga. Come and join our group and be apart of the fun.</p>
-          <p>We can help with your job search or help with career advice, just ask a question and somebody from the community will help you out.</p>
-        </div>
-        <div className="c-slack__column-image">
-          <img src={Image_Slack} alt="Junior Dev Tauranga Slack Community" />
         </div>
       </SlackChannel>
 
