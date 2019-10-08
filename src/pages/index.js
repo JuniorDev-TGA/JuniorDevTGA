@@ -73,7 +73,7 @@ const IndexPage = () => {
       <div className="c-slack__column-text">
         <div className="c-slack__title">We have a slack channel!</div>
         <div className="c-slack__description">
-          <p>We have an awesome community of over 50 developers in Tauranga. Come and join our group and be apart of the fun.</p>
+          <p>We have an awesome community of over 120+ developers in Tauranga. Come and join our group and be apart of the fun.</p>
           <p>We can help with your job search or help with career advice, just ask a question and somebody from the community will help you out.</p>
         </div>
         <div className="c-slack__cta">
