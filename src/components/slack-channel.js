@@ -1,7 +1,7 @@
 import React from "react"
 
 const SlackChannel = ({children}) => (
-  <div className="c-slack">
+  <div className="c-slack" id="slack">
     {children}
   </div>
 )

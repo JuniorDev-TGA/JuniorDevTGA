@@ -11,7 +11,7 @@ import DatacomLogo from "../images/datacom-logo.png"
 import CucumberLogo from "../images/cucumber-logo.png"
 
 const Hosts = () => (
-  <div className="c-hosts">
+  <div className="c-hosts" id="hosts">
     <div className="c-hosts__container u-text-center">
       <h1>Meet the hosts</h1>
       <div className="c-hosts__people">
