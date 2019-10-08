@@ -1,0 +1,123 @@
+.c-learn {
+  padding: 60px 15px;
+  width: 990px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+  h2.c-learn__heading {
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    @media all and (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
+  .c-learn__description {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .c-learn__tutorials {
+    padding-top: 30px;
+  }
+
+
+.c-tutorial__list {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 -7.5px;
+}
+  .c-tutorial__container {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+
+    @media all and (min-width: 1024px) {
+      flex: 1 1 33.33%;
+
+      &:first-child {
+        flex-basis: 100%;
+      }
+    }
+  }
+    .c-tutorial__item {
+      position: relative;
+      margin: 0 7.5px;
+      height: 100%;
+    }
+
+    .c-tutorial__item img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .c-tutorial__overlay {
+      position: relative;
+      z-index: 2;
+      padding: 0 15px;
+      background: rgba(49, 52, 64, 0.5);
+      width: 60%;
+      max-width: 360px;
+      min-width: 230px;
+      margin-left: auto;
+      height: 310px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+      .c-tutorial__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFF;
+        line-height: 1.33;
+        margin-bottom: 30px;
+      }
+
+      .c-tutorial__description {
+        font-size: 16px;
+        color: #FFF;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+
+
+.c-hunt {
+  background: #f8f8f8;
+}
+
+  .c-hunt__container {
+    padding: 60px 15px;
+    width: 990px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  h2.c-hunt__heading {
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    @media all and (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  .c-hunt__description {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .c-hunt__cta {
+    text-align: center;
+  }

@@ -1,7 +1,5 @@
 .c-slack {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
   align-items: center;
   background: #4A154B;
   padding: $spacing-unit-huge $spacing-unit;
@@ -15,8 +13,8 @@
   }
 }
   .c-slack__column-text {
-    width: 100%;
-    max-width: 430px;
+    width: 430px;
+    max-width: 100%;
     margin: 0 auto;
 
     @include media-query('large') {
